@@ -1,290 +1,238 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="en"><head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Job Passcard</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/fastbootstrap@2.0.2/dist/css/fastbootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha256-ywOwZUVHXdYvx4hw3+x4KBDt8Fb8cks0iorq4Tzeshg="
+            crossorigin="anonymous">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@1,300&family=Noto+Sans:wght@600&family=Nunito+Sans:opsz,wght@6..12,700&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+        <link rel="shortcut icon"
+            href="https://job-passcard.vercel.app/logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Passcard</title>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/fastbootstrap@2.0.2/dist/css/fastbootstrap.min.css" rel="stylesheet" integrity="sha256-ywOwZUVHXdYvx4hw3+x4KBDt8Fb8cks0iorq4Tzeshg=" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@1,300&family=Noto+Sans:wght@600&family=Nunito+Sans:opsz,wght@6..12,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="https://job-passcard.vercel.app/logo.png" type="image/x-icon">
-</head>
+    <body>
+        <nav class="navbar navbar-expand-lg p-1 justify-content-between">
+            <div class="container">
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarButtonsExample" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="index.html#">
+                    <div class="logo">
+                        <img src="https://job-passcard.vercel.app/logo.png"
+                            alt="logo">
+                        <p>Job</p><span>Passcard</span>
+                    </div>
+                </a>
+                <div class="navbar-brand">
+                    <div class="menu-icon d-lg-none">
+                        <!-- Hidden on large screens and above, visible on smaller screens -->
+                        <a href="index.html#"><i class="bi bi-search"></i></a>
+                    </div>
+                    <div class="menu-icon d-lg-none">
+                        <!-- Hidden on large screens and above, visible on smaller screens -->
+                        <a href="index.html#"><i class="bi bi-cart"></i></a>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarButtonsExample">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link px3" href="index.html#">ABOUT US</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link px3" aria-current="page" href="index.html#">PASSCARD</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link px3" aria-current="page" href="index.html#">PROFILE</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex  ms-auto navbar-nav ">
 
-<body>
-    <nav class="navbar navbar-expand-lg p-1 justify-content-between">
+                        <div class="nav-item icon-home ">
+                            <div class aria-current="page" href="#"><i
+                                    class="bi bi-search"></i></div>
+                        </div>
+
+                        <div class="nav-item icon-home ">
+                            <div class="aaa "><i class="bi bi-cart3 cart-icon"></i><span
+                                    class="badge">21</span></div>
+                        </div>
+
+                    </div>
+                    <div class="navbar-nav">
+                        <div class="nav-item ">
+                            <a class="nav-link px3 " aria-current="page"
+                                href="index.html#">LOGIN</a>
+                        </div>
+                        <div class="vl icon-home "></div>
+                        <div class="nav-item">
+                            <a class="nav-link px3" aria-current="page" href="index.html#">SIGN
+                                UP</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <br>
+        <br>
+        <br>
+        <br>
         <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarButtonsExample" aria-expanded="false">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-            <a class="navbar-brand" href="#">
-                <div class="logo">
-                    <img src="https://job-passcard.vercel.app/logo.png" alt="logo">
-                    <p>Job</p><span>Passcard</span>
-                </div>
-            </a>
-            <div class="navbar-brand">
-                <div class="menu-icon d-lg-none">
-                    <!-- Hidden on large screens and above, visible on smaller screens -->
-                    <a href="#"><i class="bi bi-search"></i></a>
-                </div>
-                <div class="menu-icon d-lg-none">
-                    <!-- Hidden on large screens and above, visible on smaller screens -->
-                    <a href="#"><i class="bi bi-cart"></i></a>
-                </div>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarButtonsExample">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item ">
-                        <a class="nav-link px3" href="#">ABOUT US</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link px3" aria-current="page" href="#">PASSCARD</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link px3" aria-current="page" href="#">PROFILE</a>
-                    </li>
-                </ul>
-                <div class="d-flex  ms-auto navbar-nav ">
-
-                    <div class="nav-item icon-home ">
-                        <div class="" aria-current="page" href="#"><i class="bi bi-search"></i></div>
-                    </div>
-
-                    <div class="nav-item icon-home ">
-                        <div class="aaa "><i class="bi bi-cart3 cart-icon"></i><span class="badge">1</span></div>
-                    </div>
-
-                </div>
-                <div class="navbar-nav">
-                    <div class="nav-item ">
-                        <a class="nav-link px3 " aria-current="page" href="#">LOGIN</a>
-                    </div>
-                    <div class="vl icon-home "></div>
-                    <div class="nav-item">
-                        <a class="nav-link px3" aria-current="page" href="#">SIGN UP</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </nav>
-    <br>
-    <br>
-    <br>
-    <div class="container">
-        <h1>My Cart</h1>
-        <div class="row justify-content-center">
-            <div class="col-md-7">
-                <div class="card">
-                    <div class="card-content">
-                        <div class="delete-btn">
-                            <img src="https://job-passcard.vercel.app/delete-btn.png" alt="" width="40px" height="40px">
-                        </div>
-                        <div class="card-blue">
-                            <div class="card-icon">
-                                <img src="https://job-passcard.vercel.app/file-icon-blue.png" alt="" width="20px" height="20px">
+            <h1>My Cart</h1>
+            <div class="row justify-content-center">
+                <div class="col-md-7">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="delete-btn">
+                                <img
+                                    src="https://job-passcard.vercel.app/delete-btn.png"
+                                    alt width="40px" height="40px">
                             </div>
-                            <p>Google Docs</p>
-                            <p>Used for Business</p>
-                        </div>
-                        <div class=" ">
-                            <p>Google Docs</p>
-                            <div class="row">
-                                <div class="col">
-                                    <div class="rating-container">
-                                        <input type="radio" id="star1" name="rating" value="1">
-                                        <label for="star1" onclick="changeColor(this)"></label>
-                                        <input type="radio" id="star2" name="rating" value="2">
-                                        <label for="star2" onclick="changeColor(this)"></label>
-                                        <input type="radio" id="star3" name="rating" value="3">
-                                        <label for="star3" onclick="changeColor(this)"></label>
-                                        <div class="dropdown">
-                                            <div class="dropdown-btn" onclick="toggleDropdown(this)">
-                                                <a id="selectedValue">LV-1-3 </a>
-                                                <img src="up-and-down-arrow.png" alt="icon" width="20px" height="20px">
-                                            </div>
-                                            <div class="dropdown-content">
-                                                <a href="#" value="LV-1-3" onclick="setValue(this, 'selectedValue')" class="selected"><i class="bi bi-check-lg"></i> LV-1-3</a>
-                                                <a href="#" value="LV-2-3" onclick="setValue(this, 'selectedValue')"><i class="bi bi-check-lg"></i> LV-2-3</a>
-                                                <a href="#" value="LV-3-3" onclick="setValue(this, 'selectedValue')"><i class="bi bi-check-lg"></i> LV-3-3</a>
-                                            </div>
+                            <div class="card-blue">
+                                <div class="card-icon">
+                                    <img
+                                        src="https://job-passcard.vercel.app/file-icon-blue.png"
+                                        alt width="20px" height="20px">
+                                </div>
+                                <p>Google Docs</p>
+                                <p>Used for Business</p>
+                            </div>
+                            <div class="suphakit">
+                                <p>Google Docs</p>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="rating-container" id="rating-container-1">
+                                            <input type="radio" id="s1" name="rating1" value="1">
+        <label for="s1" onclick="changeColor(this, 'rating-container-1')"></label>
+        <input type="radio" id="s2" name="rating1" value="2">
+        <label for="s2" onclick="changeColor(this, 'rating-container-1')"></label>
+        <input type="radio" id="s3" name="rating1" value="3">
+        <label for="s3" onclick="changeColor(this, 'rating-container-1')"></label>
+                                                <select name="ggdoc"id="google-docs"> 
+                                                    <option value="1">LV 1-3</option>
+                                                    <option value="2">LV 2-3</option>
+                                                    <option value="3">LV 3-3</option>
+                                                </select>
+                                            
                                         </div>
                                     </div>
                                 </div>
+                                <strong style="color: rgba(107, 114, 128, 0.8);">150 THB</strong>
                             </div>
-                            <font color="#ccc">150 THB</font>
                         </div>
                     </div>
-                </div>
-                <br>
-                <div class="card">
-                    <div class="card-content">
-                        <img src="https://job-passcard.vercel.app/delete-btn.png" alt="" width="40px" height="40px">
+                    <br>
+                    <div class="card">
+                        <div class="card-content">
+                            <img
+                                src="https://job-passcard.vercel.app/delete-btn.png"
+                                alt width="40px" height="40px">
 
-                        <div class="card-orien">
-                            <div class="card-icon">
-                                <img src="https://job-passcard.vercel.app/file-orange.png" alt="" width="20px" height="20px">
+                            <div class="card-orien">
+                                <div class="card-icon">
+                                    <img
+                                        src="https://job-passcard.vercel.app/file-orange.png"
+                                        alt width="20px" height="20px">
+                                </div>
+                                <p class="lead">Google Slides</p>
+                                <p>Used for Business</p>
                             </div>
-                            <p class="lead">Google Slides</p>
-                            <p>Used for Business</p>
-                        </div>
-                        <div class="">
-                            <p>Google Slides</p>
-                            <div class="row">
-                                <div class="col-ld">
-                                    <div class="rating-container">
-                                        <input type="radio" id="s1" name="rating" value="1">
-                                        <label for="s1" onclick="changeColor(this)"></label>
-                                        <input type="radio" id="s2" name="rating" value="2">
-                                        <label for="s2" onclick="changeColor(this)"></label>
-                                        <input type="radio" id="s3" name="rating" value="3">
-                                        <label for="s3" onclick="changeColor(this)"></label>
-                                        <div class="dropdown">
-                                            <div class="dropdown-btn" onclick="toggleDropdown(this)">
-                                                <a id="selectedValue2">LV-1/3</a>
-                                                <img src="up-and-down-arrow.png" alt="icon" width="20px" height="20px">
-                                            </div>
-                                            <div class="dropdown-content">
-                                                <a href="#" value="LV-1/3" onclick="setValue(this, 'selectedValue2')" class="selected"><i class="bi bi-check-lg"></i>LV-1/3</a>
-                                                <a href="#" value="LV-2/3" onclick="setValue(this, 'selectedValue2')"><i class="bi bi-check-lg"></i>LV-2/3</a>
-                                                <a href="#" value="LV-3/3" onclick="setValue(this, 'selectedValue2')"><i class="bi bi-check-lg"></i>LV-3/3</a>
-                                                <a href="#" value="LV-4/4" onclick="setValue(this, 'selectedValue2')"><i class="bi bi-check-lg"></i>LV-4/4</a>
-                                            </div>
-                                        </div>
+                            <div class>
+                                <p>Google Slides</p>
+                                <div class="row">
+                                    <div class="col-ld">
+                                        <div class="rating-container" id="rating-container-2">
+                                             <input type="radio" id="d1" name="rating2" value="1">
+        <label for="d1" onclick="changeColor(this, 'rating-container-2')"></label>
+        <input type="radio" id="d2" name="rating2" value="2">
+        <label for="d2" onclick="changeColor(this, 'rating-container-2')"></label>
+        <input type="radio" id="d3" name="rating2" value="3">
+        <label for="d3" onclick="changeColor(this, 'rating-container-2')"></label>
+                                            
+                                                <select name="ggslide"
+                                                    id="google-slides">
+                                                    <option value="1">LV 1-4</option>
+                                                    <option value="2">LV 2-4</option>
+                                                    <option value="3">LV 3-4</option>
+                                                    <option value="4">LV 4-4</option>
+                                                </select>
+                                            
 
+                                        </div>
                                     </div>
                                 </div>
+                                <strong style="color: rgba(107, 114, 128, 0.8);">150 THB</strong>
                             </div>
-                            <font color="#ccc">150 THB</font>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="card-oredr">
+                        <p>Order Info</p>
+                        <div class="Subtotal">
+                            <div>
+                                <strong style="color: rgba(107, 114, 128, 0.8);">Subtotal</strong>
+                            </div>
+                            <div>
+                                <strong style="color: rgba(107, 114, 128, 0.8);">THB 300</strong>
+                            </div>
+                        </div>
+                        <div class="totle">
+                            <div class="icon">
+                                <img
+                                    src="https://job-passcard.vercel.app/cupon-icon.png"
+                                    alt="icon" width="20px" height="20px">
+                            </div>
+                            <div class="input-group">
+                                <input type="text" placeholder="Promotion code">
+                            </div>
+                            <div>
+                                <button class="btng">Apply</button>
+                            </div>
+                        </div>
+                        <div class="Payment">
+                            <div>
+                                <p>Total Payment</p>
+                            </div>
+                            <div>
+                                <span class="text-green-400">THB 300</span>
+                            </div>
+                        </div>
+                        <div align="center">
+                            <button class="btngreen">Login To Checkout</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-5">
-                <div class="card-oredr">
-                    <p>Order Info</p>
-                    <div class="Subtotal">
-                        <div>
-                            <p>Subtotal</p>
-                        </div>
-                        <div>
-                            <p>THB 300</p>
-                        </div>
-                    </div>
-                    <div class="totle">
-                        <div class="icon">
-                            <img src="https://job-passcard.vercel.app/cupon-icon.png" alt="icon" width="20px" height="20px">
-                        </div>
-                        <div class="input-group">
-                            <input type="text" placeholder="Promotion code">
-                        </div>
-                        <div>
-                            <button class="btng">Apply</button>
-                        </div>
-                    </div>
-                    <div class="Payment">
-                        <div>
-                            <p>Total Payment</p>
-                        </div>
-                        <div>
-                            <span class="text-green-400">THB 300</span>
-                        </div>
-                    </div>
-                    <div align="center">
-                        <button class="btngreen">Login To Checkout</button>
-                    </div>
-                </div>
-            </div>
+
         </div>
-
-
+    </section>
     <hr>
- <script language=JavaScript>
-  
-        var message = "อะ จ๊ะเอ๋ ตัวเอง";
-        function clickIE() {
-            if (document.all) {
-                alert(message);
-                return false;
-            }
-        }
-
-        function clickNS(e) {
-            if (document.layers || (document.getElementById && !document.all)) {
-                if (e.which == 2 || e.which == 3) {
-                    alert(message);
-                    return false;
-                }
-            }
-        }
-        if (document.layers) {
-            document.captureEvents(Event.MOUSEDOWN);
-            document.onmousedown = clickNS;
-        } else {
-            document.onmouseup = clickNS;
-            document.oncontextmenu = clickIE;
-        }
-        document.oncontextmenu = new Function("return false")
-   
-    </script>
     <script>
-        function toggleDropdown(btn) {
-            btn.closest('.dropdown').classList.toggle('active');
-        }
-
-        function setValue(element, targetId) {
-            var selectedValue = element.getAttribute('value');
-            document.getElementById(targetId).innerText = selectedValue;
-
-      
-            var options = element.closest('.dropdown').querySelectorAll('.dropdown-content a');
-            options.forEach(function(option) {
-                option.classList.remove('selected');
-            });
-
-            element.classList.add('selected');
-
-            element.closest('.dropdown').classList.remove('active');
-        }
-    </script>
-    <script>
-        function toggleDropdown(btn) {
-            btn.closest('.dropdown').classList.toggle('active');
-        }
-
-        function setValue(element, targetId) {
-            var selectedValue = element.getAttribute('value');
-            document.getElementById(targetId).innerText = selectedValue;
-
-            // Remove the 'selected' class from all options
-            var options = element.closest('.dropdown').querySelectorAll('.dropdown-content a');
-            options.forEach(function(option) {
-                option.classList.remove('selected');
-            });
-
-      
-            element.classList.add('selected');
-
-            element.closest('.dropdown').classList.remove('active');
-        }
-    </script>
-    <script>
-        function changeColor(clickedLabel) {
+        function changeColor(clickedLabel, containerId) {
             var rating = parseInt(clickedLabel.previousElementSibling.value);
 
-            var labels = document.querySelectorAll('.rating-container label');
+            var container = document.getElementById(containerId);
+            var labels = container.querySelectorAll('label');
+
             labels.forEach(function(label) {
                 var labelRating = parseInt(label.previousElementSibling.value);
                 label.style.backgroundColor = labelRating <= rating ? '#34d399' : '#f3f4f6';
             });
         }
     </script>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/fastbootstrap@2.0.2/dist/js/fastbootstrap.min.js" integrity="sha256-o0tNXN7ia0O9G0qNbrzBkEEiQTv+GeW5EO4LjnfDkZk=" crossorigin="anonymous"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/fastbootstrap@2.0.2/dist/js/fastbootstrap.min.js"
+        integrity="sha256-o0tNXN7ia0O9G0qNbrzBkEEiQTv+GeW5EO4LjnfDkZk="
+        crossorigin="anonymous"></script>
 
-</html>
+</body></html>
